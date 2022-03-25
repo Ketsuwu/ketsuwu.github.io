@@ -1,0 +1,42 @@
+title: "Skins"
+author: "Ketsuwu"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## List of Skins
+
+1. [Recurrent Neural Network](https://brandonyph.github.io/Introduction-to-RNN-in-R/)
+2. [Heatmap](https://github.com/brandonyph/Heatmap-Tutorial-in-R)
+3. [Convolutional Neural Network](https://github.com/brandonyph/Introduction-to-CNN-in-R)
+4. [Word Embedding](https://github.com/brandonyph/Introduction-to-Word-Embedding-in-R)
+5. [Convolutional Neural Network with Torch for R](https://brandonyph.github.io/Torch-for-R-CNN-Example/)
+6. [ggplot2](https://brandonyph.github.io/ggplot2-tutorial/)
+7. [gganimate](https://brandonyph.github.io/gganimate-tutorial/)
+8. [Saving Images from R](https://brandonyph.github.io/Saving-Plot-As-Image/)
+9. [R Shiny App](https://github.com/brandonyph/R-Shinny-Tutorial)
+10. [Data Manipulation with dplyr](https://brandonyph.github.io/Data-Manipulation-with-dplyr/)
+11. [AutoEncoder vs PCA](https://github.com/brandonyph/AutoEncoder-vs-PCA-Dimensional-Reduction)
+
+## Here's some random Plot of Data
+
+```{r echo=FALSE, include=FALSE}
+library(plotly)
+mtcars$am[which(mtcars$am == 0)] <- 'Automatic'
+mtcars$am[which(mtcars$am == 1)] <- 'Manual'
+mtcars$am <- as.factor(mtcars$am)
+fig <- plot_ly(mtcars, x = ~wt, y = ~hp, z = ~qsec, color = ~am, colors = c('#BF382A', '#0C4B8E'))
+fig <- fig %>% add_markers()
+plot <- fig %>% layout(scene = list(xaxis = list(title = 'Weight'),
+                                   yaxis = list(title = 'Gross horsepower'),
+                                   zaxis = list(title = '1/4 mile time')))
+```
+```{r}
+plot
+```
