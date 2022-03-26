@@ -2,7 +2,15 @@
 <html lang>
 <body>
 	<noscript>You need to enable JavaScript to run this app.</noscript>
+	<IfModule mod_rewrite.c>
+   RewriteEngine On
+   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
+   RewriteRule .* http://localhost/html/%1 [R=301,L]
+
+   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*)\ HTTP/
+   RewriteRule .* %1.html [L]
 <head>
+</IfModule>
 	<meta charset="utf-8">
 	<link rel="icon" href="/logo.png">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
