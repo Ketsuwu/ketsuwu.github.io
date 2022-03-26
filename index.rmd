@@ -1,16 +1,13 @@
 ---
-title: "Skins"
-author: "Ketsuwu"
+title: "Ketsuwu"
+author: "Skins"
 output:
   prettydoc::html_pretty:
-    theme: midnight
+    theme: cayman
     highlight: github
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-## List of Skins
-
-1. [MonkoKamui v2](https://monkosite.s3.us-west-2.amazonaws.com/MonkoKamui+v2.osk)
+[MonkoKamui v2](https://monkosite.s3.us-west-2.amazonaws.com/MonkoKamui+v2.osk)
