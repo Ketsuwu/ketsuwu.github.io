@@ -1,7 +1,10 @@
 ---
 title: "Ketsuwu"
 author: "Skins"
-theme: Midnight
+output:
+  prettydoc::html_pretty:
+    theme: midnight
+    highlight: github
 ---
 
 ```{r setup, include=FALSE}
