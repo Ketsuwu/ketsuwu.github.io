@@ -1,13 +1,11 @@
 ---
 title: "Ketsuwu"
 author: "Skins"
-output:
-  prettydoc::html_pretty:
-    theme: cayman
-    highlight: github
+theme: Midnight
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 [MonkoKamui v2](https://monkosite.s3.us-west-2.amazonaws.com/MonkoKamui+v2.osk)
