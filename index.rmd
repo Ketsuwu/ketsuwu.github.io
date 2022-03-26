@@ -3,7 +3,7 @@ title: "Ketsuwu"
 author: "Skins"
 output:
   prettydoc::html_pretty:
-    theme: midnight
+    theme: tactile
     highlight: github
 ---
 
