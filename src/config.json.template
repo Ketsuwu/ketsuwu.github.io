@@ -1,5 +1,0 @@
-{
-	"backendurl": "http://localhost:3000/api",
-	"revalidatetoken": "TEST123",
-	"MongoURI": "??????????"
-}
