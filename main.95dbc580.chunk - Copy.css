@@ -81,6 +81,7 @@ p {
     width: 225px;
     height: 225px;
     border-radius: 16px;
+    margin-top: 12px;
     padding-top: 12px;
     transition: 1s
 }
