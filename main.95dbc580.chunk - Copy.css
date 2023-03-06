@@ -125,8 +125,8 @@ p {
     display: grid;
     justify-content: center;
     justify-items: center;
-    grid-template-columns: repeat(auto-fit,500px);
-    margin: 5% 5% 0;
+    grid-template-columns: repeat(auto-fit,350px);
+    margin: 5% 10% 0;
     padding-bottom: 10%;
     background: #000
 }
