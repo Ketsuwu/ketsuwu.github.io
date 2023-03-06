@@ -1,5 +1,5 @@
-import SkinComponent from 'src/components/SkinComponent/SkinComponent';
-import skinsdata from 'src/config/skins.json';
+import SkinComponent from '/src/components/SkinComponent/SkinComponent';
+import skinsdata from '/src/config/skins.json';
 
 export default function Skins() {
 	let skins = [];
